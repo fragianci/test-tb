@@ -1,0 +1,18 @@
+.container{
+  opacity: 0;
+  stroke-dasharray: 10;
+  font-family: 'Comic Sans MS', cursive;
+  &.fadeIn{
+    transition: 2s;
+    opacity: 1;
+    font-size: 1rem;
+    color: #a8394c;
+    &.changeFontSize{
+      font-size: 2rem;
+    }
+    .text-center{
+      background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,186,186,1) 50%, rgba(255,255,255,1) 100%);
+      opacity: 0.8;
+    }
+  }
+}

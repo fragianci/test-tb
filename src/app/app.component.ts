@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'test-tb';
+  showing = false;
+  changeFontSize = false;
+
+  constructor() {
+    setTimeout(() => {
+      this.showing = true;
+    }, 500);
+    setTimeout(() => {
+      this.changeFontSize = true;
+    }, 1500);
+  }
 }
